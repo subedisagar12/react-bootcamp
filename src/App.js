@@ -1,5 +1,6 @@
 import Welcome from "./components/Welcome";
 import Counter from "./components/Counter";
+import Conditional from "./components/Conditional";
 
 function App() {
   return (
@@ -9,7 +10,9 @@ function App() {
       </Welcome> */}
 
       {/* <Welcome name="Hari" address="Kathmandu" /> */}
-      <Counter />
+      {/* <Counter /> */}
+
+      <Conditional />
     </>
   );
 }
