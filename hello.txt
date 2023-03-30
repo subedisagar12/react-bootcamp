@@ -1,0 +1,8 @@
+->props are immutable
+->state are mutable
+
+->props belongs to parent component
+->state belongs to component itself
+
+->props cannot be modified
+-> state can be only modified using special function
