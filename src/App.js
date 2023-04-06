@@ -6,11 +6,27 @@ import Styling from "./components/Styling";
 
 import "./App.css";
 import HelloWorld from "./components/HelloWorld/HelloWorld";
-import FormHandling from "./components/FormHandling";
+// import FormHandling from "./components/FormHandling";
+
+import Navbar from "./components/Navbar";
+import Homepage from "./pages/Homepage";
+import AboutPage from "./pages/Aboutpage";
+import ContactPage from "./pages/ContactPage";
+
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
+      <Navbar />
+      <Routes>
+        <Route path="/about" element={<AboutPage />} />
+
+        <Route path="/contact" element={<ContactPage />} />
+
+        <Route path="/" element={<Homepage />} />
+      </Routes>
+
       {/* <Welcome name="Hari" address="Kathmandu">
         <p>Hello</p>
       </Welcome> */}
@@ -26,7 +42,12 @@ function App() {
 
       <HelloWorld /> */}
 
-      <FormHandling />
+      {/* <FormHandling /> */}
+
+      {/* <Navbar />
+      <Homepage />
+      <AboutPage />
+      <ContactPage /> */}
     </>
   );
 }
