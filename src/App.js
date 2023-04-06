@@ -6,6 +6,7 @@ import Styling from "./components/Styling";
 
 import "./App.css";
 import HelloWorld from "./components/HelloWorld/HelloWorld";
+import FormHandling from "./components/FormHandling";
 
 function App() {
   return (
@@ -21,9 +22,11 @@ function App() {
 
       {/* <ListRendering /> */}
 
-      <Styling />
+      {/* <Styling />
 
-      <HelloWorld />
+      <HelloWorld /> */}
+
+      <FormHandling />
     </>
   );
 }
