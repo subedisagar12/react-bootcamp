@@ -12,6 +12,7 @@ import Navbar from "./components/Navbar";
 import Homepage from "./pages/Homepage";
 import AboutPage from "./pages/Aboutpage";
 import ContactPage from "./pages/ContactPage";
+import PostPage from "./pages/Postpage";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -25,6 +26,8 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
 
         <Route path="/" element={<Homepage />} />
+
+        <Route path="/post" element={<PostPage />} />
       </Routes>
 
       {/* <Welcome name="Hari" address="Kathmandu">
