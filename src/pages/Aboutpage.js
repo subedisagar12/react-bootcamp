@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+import { UserContext } from "../context/UserContext";
 
-const AboutPage = () => {
+const AboutPage = (props) => {
+  let { user } = useContext(UserContext);
+
   return (
     <>
-      <h1>About Page</h1>
+      <h1>My name is {user.name}</h1>
     </>
   );
 };

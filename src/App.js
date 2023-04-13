@@ -13,8 +13,10 @@ import Homepage from "./pages/Homepage";
 import AboutPage from "./pages/Aboutpage";
 import ContactPage from "./pages/ContactPage";
 import PostPage from "./pages/Postpage";
+import Loginpage from "./pages/Loginpage";
 
 import { Routes, Route } from "react-router-dom";
+import { useState } from "react";
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
         <Route path="/" element={<Homepage />} />
 
         <Route path="/post" element={<PostPage />} />
+
+        <Route path="/login" element={<Loginpage />} />
       </Routes>
 
       {/* <Welcome name="Hari" address="Kathmandu">
